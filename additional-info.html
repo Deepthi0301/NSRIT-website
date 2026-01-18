@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Additional Info - NSRIT</title>
+    <!-- Favicon -->
+<link rel="icon" type="images/png" href="images/icons8-details-64.png">
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background-color: #004080;
+            color: white;
+            position: relative;
+        }
+
+        .logo {
+            width: 240px;
+            height: auto;
+            border-radius: 20px;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+
+        .college-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Navigation Styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #002060;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #004080;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #004080;
+            font-size: 24px;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        p, li {
+            font-size: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Photo Gallery Styling */
+        .gallery-container {
+            display: flex;
+            flex-direction: column; /* Images arranged vertically */
+            gap: 15px;
+            padding: 10px;
+            margin-top: 20px;
+            max-height: 500px;
+            overflow-y: auto; /* Enables vertical scrolling */
+            scrollbar-width: thin;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Image Modal Styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+    <img src="images\logo.jpg" alt="NSRIT Logo" class="logo" />
+    <span class="college-name">NSRIT</span>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="ranking.html">Ranking of the college</a>
+    <a href="additional-info.html">Additional Info about NSRIT</a>
+</nav>
+
+<!-- Scrolling Info Bar -->
+<div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+        📢 Admissions Open for 2025 Batch - Apply Now! | 🎓 NSRIT Ranked Among Top Engineering Colleges | 🏆 Congratulations to Hackathon Winners | 
+        💡 NSRIT Students Win National AI Innovation Challenge | 📅 Upcoming Job Fair 2025 - Over 100+ Companies Participating | 🔥 95% Placement Record Achieved in 2024 | 
+        🏛️ NSRIT Introduces New Research Labs for AI & Robotics | 📚 Scholarships Available for Meritorious Students | 🎭 Annual Tech Fest ‘TechnoFete 2025’ - Coming Soon!
+    </marquee>
+</div>
+
+<!-- Add CSS for the Scrolling Info Bar -->
+<style>
+    .marquee-container {
+        background-color: #004080;
+        color: white;
+        padding: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    marquee {
+        display: inline-block;
+        width: 100%;
+    }
+</style>
+
+<!-- Insights Section -->
+<div class="section">
+    <h2>Insights</h2>
+    <p>NSRIT stands out as a premier institution providing technical excellence in education.With a strong emphasis on research, innovation, and academic rigor, NSRIT consistently ranks among the top technical institutes in India. The institute fosters a culture of learning and leadership, preparing students to excel in a competitive global environment.</p>
+</div>
+
+<!-- Exam Cell Section -->
+<div class="section">
+    <h2>Exam Cell</h2>
+    <p>The Exam Cell at NSRIT is responsible for conducting smooth and transparent examinations. Key responsibilities include:</p>
+    <ul>
+        <li>Coordinating internal and external exams.</li>
+        <li>Ensuring strict adherence to exam guidelines.</li>
+        <li>Facilitating student exam-related queries.</li>
+    </ul>
+</div>
+
+<!-- Placements Section -->
+<div class="section">
+    <h2>Placements</h2>
+    <p>NSRIT has a dedicated placement cell that works closely with top-tier companies to provide students with excellent job opportunities. Recent highlights include:</p>
+    <ul>
+        <li><strong>Average package:</strong> ₹6 LPA</li>
+        <li><strong>Highest package:</strong> ₹20 LPA</li>
+        <li><strong>Top recruiters:</strong> Infosys, TCS, Wipro, Microsoft, and Amazon</li>
+        <li><strong>Over 90% placement rate</strong> for eligible students</li>
+    </ul>
+</div>
+
+<!-- Achievements Section -->
+<div class="section">
+    <h2>Students and Faculty Achievements</h2>
+    <ul>
+        <li>Team NSRIT won the National Level Hackathon 2024.</li>
+        <li>Faculty awarded for excellence in research in AI and ML.</li>
+        <li>Students secured top positions in technical and sports events.</li>
+        <li>AI research paper published in IEEE Journal.</li>
+    </ul>
+</div>
+
+<!-- Events Section -->
+<div class="section">
+    <h2>Events</h2>
+    <p>Stay updated with the latest happenings at NSRIT, including recent announcements, achievements, and upcoming events.</p>
+
+    <h3>📢 Recent Announcements</h3>
+    <ul>
+        <li>Admissions open for the 2025 batch. Apply now!</li>
+        <li>New research center for Artificial Intelligence inaugurated.</li>
+        <li>Annual cultural fest "TechnoFete 2025" scheduled for April.</li>
+    </ul>
+
+    <h3>🏆 Achievements</h3>
+    <ul>
+        <li>NSRIT CSE students secured the first prize in the Error Debugging event hosted by Miracle Software Systems.</li>
+        <li>Second-year CSE students won the 16-Hours Hackathon, showcasing their exceptional coding skills.</li>
+        <li>NSRIT team clinched first place in the 24-hour "Hack with Nellore" Hackathon, demonstrating innovation and teamwork.</li>
+        <li>Participation and victory in the Citizen Hack at Digital Summit 2024, a 24-hour Codeathon hosted by Miracle Software Systems.</li>
+    </ul>
+
+    <h3>📅 Upcoming Events</h3>
+    <ul>
+        <li><strong>Hackathon 2025</strong> - March 20, 2025 (Location: NSRIT Auditorium)</li>
+        <li><strong>Job Fair 2025</strong> - April 5, 2025 (Over 50+ companies participating)</li>
+        <li><strong>Alumni Meet</strong> - May 10, 2025 (Connect with former students)</li>
+    </ul>
+
+<h3>📜 Past Events</h3>
+<ul>
+    <li>Graduation Ceremony 2024 - Successfully hosted 500+ graduates.</li>
+    <li>Tech Summit 2024 - Featured speakers from Google and Microsoft.</li>
+</ul>
+</div>
+
+
+<!-- Photo Gallery Section -->
+<div class="section">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-container">
+        <img src="images\gallery1.png" alt="Industry visits" onclick="openModal(this)">
+        <img src="images\gallery2.png" alt="Extra-curricular activities" onclick="openModal(this)">
+        <img src="images\gallery3.png" alt="Graduation" onclick="openModal(this)">
+        <img src="images\gallery4.png" alt="Blood donation camp" onclick="openModal(this)">
+        <img src="images\gallery5.png" alt="Swachh Bharat Mission" onclick="openModal(this)">
+        <img src="images\gallery6.png" alt="Workshops" onclick="openModal(this)">
+    </div>
+</div>
+
+<!-- Modal for Enlarged Image -->
+<div id="imageModal" class="modal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Enlarged Image">
+</div>
+
+   <!-- Contact Details & Social Media Links Section -->
+<div class="section">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> NSRIT Campus, Sontyam, Pendurthi-Anandapuram Highway, Visakhapatnam, Andhra Pradesh 531173</p>
+    <p><strong>Email:</strong> <a href="mailto:info@nsrit.edu">info@nsrit.edu</a></p>
+    <p><strong>Phone:</strong> +91-1234567890</p>
+
+    <h3>Follow Us on Social Media</h3>
+    <div class="social-icons" style="display: flex; justify-content: center; gap: 15px;">
+        <a href="https://www.facebook.com/vitssontyam?mibextid=ZbWKwL" target="_blank">
+            <img src="images/icons8-facebook-48.png" alt="Facebook" width="40" height="40">
+        </a>
+        <a href="https://www.instagram.com/nsrit_college/?igsh=MXhhaXhiMXk1aGFwMg%3D%3D" target="_blank">
+            <img src="images/icons8-instagram-48.png" alt="Instagram" width="40" height="40">
+        </a>
+        <a href="https://www.linkedin.com/in/nsrit-autonomous-40a744256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="images/icons8-linkedin-48.png" alt="LinkedIn" width="40" height="40">
+        </a>
+        <a href="https://www.youtube.com/channel/UC2iLovwz0wd55Ty2U6Zze1A" target="_blank">
+            <img src="images/icons8-youtube-48.png" alt="YouTube" width="40" height="40">
+        </a>
+    </div>
+</div>
+
+<!-- NSRIT Location Map Section -->
+<div class="section">
+    <h2>Our Location</h2>
+    <div style="text-align: center;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.3256419444606!2d83.29318727499694!3d17.870220483101658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395ef6fb8b00c3%3A0xf05a9687dfa65d34!2sNadimpalli%20Satyanarayana%20Raju%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1742661123413!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border:0; border-radius: 10px; margin-top: 20px;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+    &copy; 2025 NSRIT. All rights reserved.
+</div>
+
+<script>
+    function openModal(imgElement) {
+        let modal = document.getElementById("imageModal");
+        let modalImg = document.getElementById("modalImage");
+        modal.style.display = "flex";
+        modalImg.src = imgElement.src;
+    }
+
+    function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+

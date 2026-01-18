@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions - NSRIT</title>
+    <!-- Favicon -->
+<link rel="icon" type="images/png" href="images/icons8-id-card-64.png">
+
+    <style>
+        /* General Styling */
+        body {
+            background-color: #f9fafb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 12px;
+            width: 240px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .college-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #1e3a8a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border-radius: 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #1c2956;
+        }
+
+        /* Section Styling */
+        .content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1e3a8a;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #1e3a8a;
+            margin-top: 20px;
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="images\logo.jpg" alt="NSRIT Logo" class="logo" />
+        <span class="college-name">NSRIT</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="ranking.html">Ranking of the college</a>
+        <a href="additional-info.html">Additional info about NSRIT</a>
+    </nav>
+
+    <!-- Scrolling Info Bar -->
+<div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+        📢 Admissions Open for 2025 Batch - Apply Now! | 🎓 NSRIT Ranked Among Top Engineering Colleges | 🏆 Congratulations to Hackathon Winners | 
+        💡 NSRIT Students Win National AI Innovation Challenge | 📅 Upcoming Job Fair 2025 - Over 100+ Companies Participating | 🔥 95% Placement Record Achieved in 2024 | 
+        🏛️ NSRIT Introduces New Research Labs for AI & Robotics | 📚 Scholarships Available for Meritorious Students | 🎭 Annual Tech Fest ‘TechnoFete 2025’ - Coming Soon!
+    </marquee>
+</div>
+
+<!-- Add CSS for the Scrolling Info Bar -->
+<style>
+    .marquee-container {
+        background-color: #004080;
+        color: white;
+        padding: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    marquee {
+        display: inline-block;
+        width: 100%;
+    }
+</style>
+
+    <!-- Admissions Section -->
+    <div class="content">
+        <h2>Admissions at NSRIT</h2>
+        <p>
+            Welcome to NSRIT! We are committed to providing a transparent and streamlined admission process for students seeking to join our prestigious institution.
+            Below are the details of the admission process for various programs.
+        </p>
+
+        <!-- Eligibility Criteria -->
+        <h3>Eligibility Criteria</h3>
+        <ul>
+            <li><strong>B.Tech:</strong> Candidates must have passed the 10+2 examination with Physics, Chemistry, and Mathematics as main subjects. A valid score in AP EAMCET (Engineering Agricultural and Medical Common Entrance Test) is mandatory.</li>
+            <li><strong>M.Tech:</strong> Candidates must have a Bachelor's degree in the relevant discipline with a valid score in GATE or AP PGECET.</li>
+            <li><strong>MBA:</strong> Candidates must have a Bachelor's degree in any discipline with a minimum of 50% marks. A valid score in AP ICET (Integrated Common Entrance Test) is required.</li>
+            <li><strong>Lateral Entry:</strong> Diploma holders are eligible for lateral entry into the second year of B.Tech through the AP ECET (Engineering Common Entrance Test).</li>
+        </ul>
+
+        <!-- Admission Procedure -->
+        <h3>Admission Procedure</h3>
+        <ol>
+            <li><strong>Step 1:</strong> Appear for the respective entrance examination (AP EAMCET, AP PGECET, GATE, or AP ICET).</li>
+            <li><strong>Step 2:</strong> Participate in the state-level counseling process conducted by APSCHE (Andhra Pradesh State Council of Higher Education).</li>
+            <li><strong>Step 3:</strong> Choose NSRIT as your preferred institution during counseling.</li>
+            <li><strong>Step 4:</strong> After seat allotment, report to the NSRIT admissions office for document verification and fee payment.</li>
+            <li><strong>Step 5:</strong> Complete the admission formalities and secure your place at NSRIT.</li>
+        </ol>
+
+        <!-- Documents Required -->
+        <h3>Documents Required</h3>
+        <ul>
+            <li>10th and 12th mark sheets</li>
+            <li>Transfer Certificate (TC)</li>
+            <li>Conduct Certificate</li>
+            <li>Category Certificate (if applicable)</li>
+            <li>AP EAMCET/AP PGECET/GATE/AP ICET Rank Card</li>
+            <li>Aadhar Card</li>
+            <li>Passport-sized Photographs</li>
+        </ul>
+
+        <!-- Fee Structure -->
+        <h3>Fee Structure</h3>
+        <ul>
+            <li><strong>B.Tech:</strong> ₹75,000 per year (subject to change as per APSCHE guidelines)</li>
+            <li><strong>M.Tech:</strong> ₹90,000 per year</li>
+            <li><strong>MBA:</strong> ₹70,000 per year</li>
+        </ul>
+
+        <!-- Important Dates -->
+        <h3>Important Dates (2025-2026)</h3>
+        <ul>
+            <li><strong>AP EAMCET Exam Date:</strong> May 10, 2025</li>
+            <li><strong>AP PGECET Exam Date:</strong> June 5, 2025</li>
+            <li><strong>AP ICET Exam Date:</strong> May 20, 2025</li>
+            <li><strong>Commencement of Classes:</strong> July 15, 2025</li>
+        </ul>
+
+        <!-- Contact Information -->
+        <h3>Contact Information</h3>
+        <p>
+            For more details and assistance, contact our admissions office:
+        </p>
+        <p>
+            <strong>Admissions Office:</strong><br />
+            NSRIT Campus, Sontyam, Pendurthi-Anandapuram Highway,<br />
+            Visakhapatnam - 531173, Andhra Pradesh, India.<br />
+            Phone: +91 80994 64546, +91 98858 24167<br />
+            Email: <a href="mailto:admissions@nsrit.edu.in">admissions@nsrit.edu.in</a>
+        </p>
+    </div>
+
+       <!-- NSRIT Location Map Section -->
+<div class="section">
+    <h2>Our Location</h2>
+    <div style="text-align: center;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.3256419444606!2d83.29318727499694!3d17.870220483101658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395ef6fb8b00c3%3A0xf05a9687dfa65d34!2sNadimpalli%20Satyanarayana%20Raju%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1742661123413!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border:0; border-radius: 10px; margin-top: 20px;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2025 NSRIT. All rights reserved.
+    </div>
+
+</body>
+</html>

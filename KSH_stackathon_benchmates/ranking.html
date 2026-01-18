@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSRIT Rankings</title>
+    <!-- Favicon -->
+<link rel="icon" type="images/png" href="images/icons8-trophy-50.png">
+
+    <style>
+        /* General Styling */
+        body {
+            background-color: #f9fafb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 12px;
+            width: 240px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .college-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #1e3a8a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border-radius: 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #1c2956;
+        }
+
+        /* Content Styling */
+        .content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1e3a8a;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #1e3a8a;
+            margin-top: 20px;
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        tr:hover {
+            background-color: #e2e8f0;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="images\logo.jpg" alt="NSRIT Logo" class="logo" />
+        <span class="college-name">NSRIT</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="ranking.html">Rankings of the college </a>
+        <a href="additional-info.html">Additional info about NSRIT</a>
+    </nav>
+
+    <!-- Scrolling Info Bar -->
+<div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+        📢 Admissions Open for 2025 Batch - Apply Now! | 🎓 NSRIT Ranked Among Top Engineering Colleges | 🏆 Congratulations to Hackathon Winners | 
+        💡 NSRIT Students Win National AI Innovation Challenge | 📅 Upcoming Job Fair 2025 - Over 100+ Companies Participating | 🔥 95% Placement Record Achieved in 2024 | 
+        🏛️ NSRIT Introduces New Research Labs for AI & Robotics | 📚 Scholarships Available for Meritorious Students | 🎭 Annual Tech Fest ‘TechnoFete 2025’ - Coming Soon!
+    </marquee>
+</div>
+
+<!-- Add CSS for the Scrolling Info Bar -->
+<style>
+    .marquee-container {
+        background-color: #004080;
+        color: white;
+        padding: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    marquee {
+        display: inline-block;
+        width: 100%;
+    }
+</style>
+
+    <!-- Rankings Section -->
+    <div class="content">
+        <h2>NSRIT Rankings</h2>
+        <p>
+            NSRIT has consistently maintained a strong reputation for academic excellence and innovation in technical education. 
+            Our rankings reflect our commitment to providing a world-class learning environment and fostering industry readiness among our students.
+        </p>
+
+        <!-- National Rankings -->
+        <h3>National Rankings</h3>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Ranking Body</th>
+                <th>Rank</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>NIRF (National Institutional Ranking Framework)</td>
+                <td>Top 150</td>
+                <td>Engineering Colleges</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>NIRF (National Institutional Ranking Framework)</td>
+                <td>Top 200</td>
+                <td>Engineering Colleges</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>Times Engineering Survey</td>
+                <td>Top 100</td>
+                <td>Private Engineering Institutes</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>India Today</td>
+                <td>Top 50</td>
+                <td>Emerging Engineering Institutes</td>
+            </tr>
+        </table>
+
+        <!-- State-Level Rankings -->
+        <h3>State-Level Rankings</h3>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Ranking Body</th>
+                <th>Rank</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>AP State Ranking</td>
+                <td>Top 10</td>
+                <td>Engineering Colleges in Andhra Pradesh</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>AP State Ranking</td>
+                <td>Top 15</td>
+                <td>Engineering Colleges in Andhra Pradesh</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>AP State Ranking</td>
+                <td>Top 20</td>
+                <td>Engineering Colleges in Andhra Pradesh</td>
+            </tr>
+        </table>
+
+        <!-- Placement Performance -->
+        <h3>Placement Performance</h3>
+        <ul>
+            <li><strong>2024:</strong> 92% placement rate with an average package of ₹6.5 LPA</li>
+            <li><strong>2023:</strong> 90% placement rate with an average package of ₹5.8 LPA</li>
+            <li><strong>2022:</strong> 88% placement rate with an average package of ₹5.2 LPA</li>
+            <li><strong>2021:</strong> 85% placement rate with an average package of ₹4.8 LPA</li>
+        </ul>
+
+        <!-- Industry Recognition -->
+        <h3>Industry Recognition</h3>
+        <ul>
+            <li>Awarded <strong>"Best Emerging Engineering Institute"</strong> by Times of India (2022)</li>
+            <li>Recognized as a <strong>"Center of Excellence in AI and ML"</strong> by NASSCOM (2023)</li>
+            <li>Certified as a <strong>"Platinum Institution"</strong> for academic and research excellence by AICTE (2024)</li>
+        </ul>
+    </div>
+    <!-- Accreditations & Recognitions Section -->
+<h2>Accreditations & Recognitions</h2>
+
+<div class="accordion">
+    <button class="accordion-btn">IQAC (Internal Quality Assurance Cell)</button>
+    <div class="panel">
+        <p>
+            NSRIT’s IQAC is committed to continuous academic and administrative improvements, ensuring that the institution meets the highest educational standards. The cell monitors and evaluates teaching-learning processes, research activities, and institutional policies to enhance overall quality.
+        </p>
+        <p><strong>Key Initiatives:</strong></p>
+        <ul>
+            <li>Regular academic audits</li>
+            <li>Implementation of quality benchmarks</li>
+            <li>Student and faculty feedback mechanisms</li>
+            <li>Workshops and training programs</li>
+        </ul>
+    </div>
+
+    <button class="accordion-btn">NAAC (National Assessment and Accreditation Council)</button>
+    <div class="panel">
+        <p>
+            NSRIT is accredited by NAAC with [mention grade if available], which highlights our commitment to quality education, faculty strength, research output, and student satisfaction.
+        </p>
+        <p><strong>Why NAAC Accreditation Matters:</strong></p>
+        <ul>
+            <li>Ensures high academic standards</li>
+            <li>Recognized by the UGC for quality assurance</li>
+            <li>Helps students in better placement and global recognition</li>
+            <li>Encourages a culture of innovation and research</li>
+        </ul>
+    </div>
+
+    <button class="accordion-btn">NBA (National Board of Accreditation)</button>
+    <div class="panel">
+        <p>
+            Our core engineering programs are NBA-accredited, ensuring that students receive industry-relevant education aligned with global standards. NBA accreditation is granted based on curriculum quality, faculty qualifications, research activities, and placement success.
+        </p>
+        <p><strong>Programs Accredited by NBA:</strong></p>
+        <ul>
+            <li>Computer Science and Engineering (CSE)</li>
+            <li>Electronics and Communication Engineering (ECE)</li>
+            <li>Mechanical Engineering (ME)</li>
+            <li>Electrical and Electronics Engineering (EEE)</li>
+        </ul>
+    </div>
+
+    <button class="accordion-btn">NIRF (National Institutional Ranking Framework)</button>
+    <div class="panel">
+        <p>
+            NSRIT actively participates in the NIRF rankings, consistently improving its position among India’s best institutions. NIRF evaluates colleges based on teaching quality, research output, graduation outcomes, and industry collaboration.
+        </p>
+        <p><strong>Recent Achievements:</strong></p>
+        <ul>
+            <li>Ranked among the Top 150 engineering colleges in India (2024)</li>
+            <li>Recognized for outstanding placement records</li>
+            <li>Improved research and publication contributions</li>
+        </ul>
+    </div>
+
+    <button class="accordion-btn">IIE (Institute Innovation & Entrepreneurship Cell)</button>
+    <div class="panel">
+        <p>
+            The IIE at NSRIT fosters a culture of innovation and entrepreneurship by supporting students in developing startups, patents, and research-driven projects. The cell collaborates with industry experts, government bodies, and startup incubators.
+        </p>
+        <p><strong>IIE Initiatives:</strong></p>
+        <ul>
+            <li>Startup incubation and mentorship programs</li>
+            <li>Hackathons and idea-pitching competitions</li>
+            <li>Funding opportunities for student startups</li>
+            <li>Industry and government collaborations for R&D</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Accordion Styling -->
+<style>
+    .accordion-btn {
+        background-color: #1e3a8a;
+        color: white;
+        cursor: pointer;
+        padding: 12px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        transition: 0.4s;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .accordion-btn:hover {
+        background-color: #14235d;
+    }
+
+    .panel {
+        padding: 15px;
+        display: none;
+        background-color: #f1f5f9;
+        border-left: 4px solid #1e3a8a;
+        border-radius: 5px;
+    }
+
+    .panel ul {
+        padding-left: 20px;
+    }
+</style>
+
+<!-- JavaScript for Accordion -->
+<script>
+    document.querySelectorAll(".accordion-btn").forEach(button => {
+        button.addEventListener("click", function() {
+            let panel = this.nextElementSibling;
+            let isActive = panel.style.display === "block";
+
+            // Close all panels
+            document.querySelectorAll(".panel").forEach(p => p.style.display = "none");
+
+            // Toggle current panel
+            panel.style.display = isActive ? "none" : "block";
+        });
+    });
+</script>
+
+
+       <!-- NSRIT Location Map Section -->
+<div class="section">
+    <h2>Our Location</h2>
+    <div style="text-align: center;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.3256419444606!2d83.29318727499694!3d17.870220483101658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395ef6fb8b00c3%3A0xf05a9687dfa65d34!2sNadimpalli%20Satyanarayana%20Raju%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1742661123413!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border:0; border-radius: 10px; margin-top: 20px;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2025 NSRIT. All rights reserved.
+    </div>
+
+</body>
+</html>
